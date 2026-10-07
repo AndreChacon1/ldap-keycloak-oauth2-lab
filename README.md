@@ -8,9 +8,20 @@ Browser/Swagger -> Bearer token -> FastAPI :8000
 
 ## Start
 ```bash
+docker network create dashboard-lab
+python -m pip install -r requirements-lab.txt
+python generate-lab-certs.py
 docker compose up -d --build
 ./load-ldap-users.sh
 ```
+
+Omit network creation if it already exists. Certificate generation refuses to overwrite
+existing files. `ldap/certs/` is gitignored; never commit its private key. The lab CA
+lasts one year and the server certificate 90 days. The old image's bundled CA is expired;
+the generated CA replaces it. Trust `ldap/certs/ca.crt` when connecting to LDAPS with
+hostname `openldap`, `localhost`, or IP `127.0.0.1`. The gateway passes TLS through,
+limits each IP to 10 simultaneous connections, and Fail2Ban bans port 636 after
+30 completed sessions in 10 seconds. This protects connections, not LDAP bind failures.
 
 ## URLs
 - phpLDAPadmin: http://localhost:8080
@@ -139,3 +150,8 @@ docker exec keycloak cat /opt/keycloak/data/import/cybersecurity-realm.json \
 This should list four mappers, not an empty object.
 
 
+
+
+## Protección Fail2Ban (práctica de octubre)
+
+Dockerfile y security/ agregan Nginx + Fail2Ban. Ejecutar con NET_ADMIN mediante Compose. HTTP: 60 solicitudes/IP en 10 s; ban 60 s. Nginx y Fail2Ban fueron ejecutados en Docker Desktop Linux. Procedimiento, arquitectura y evidencias: [repositorio de pruebas](https://github.com/AndreChacon1/dashboard-load-tests).

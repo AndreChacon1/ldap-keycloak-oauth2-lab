@@ -1,0 +1,22 @@
+[DEFAULT]
+backend = polling
+usedns = no
+ignoreip = 127.0.0.1/8 ::1
+banaction = iptables-multiport
+bantime = 60s
+findtime = 10s
+maxretry = 60
+[sshd]
+enabled = false
+[http-flood]
+enabled = true
+filter = http-flood
+port = 80
+logpath = /var/log/nginx/access.log
+[ldaps-connections]
+enabled = true
+filter = ldaps-connections
+port = 636
+logpath = /var/log/nginx/ldaps.log
+maxretry = 30
+findtime = 10s

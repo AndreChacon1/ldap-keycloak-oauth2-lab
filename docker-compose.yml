@@ -1,4 +1,10 @@
 services:
+  auth-gateway:
+    build: .
+    cap_add: [NET_ADMIN]
+    ports: ["8081:80", "636:636"]
+    depends_on: [keycloak, openldap]
+    networks: [auth-network, dashboard]
   openldap:
     image: osixia/openldap:1.5.0
     container_name: openldap
@@ -6,10 +12,13 @@ services:
       LDAP_ORGANISATION: "Example Corp"
       LDAP_DOMAIN: "example.com"
       LDAP_ADMIN_PASSWORD: "adminpassword"
-    ports:
-      - "389:389"
-      - "636:636"
+      LDAP_TLS: "true"
+      LDAP_TLS_CRT_FILENAME: ldap.crt
+      LDAP_TLS_KEY_FILENAME: ldap.key
+      LDAP_TLS_CA_CRT_FILENAME: ca.crt
+      LDAP_TLS_VERIFY_CLIENT: never
     volumes:
+      - ./ldap/certs:/container/service/slapd/assets/certs
       - ldap_data:/var/lib/ldap
       - ldap_config:/etc/ldap/slapd.d
     networks: [auth-network]
@@ -21,7 +30,7 @@ services:
       PHPLDAPADMIN_LDAP_HOSTS: "openldap"
       PHPLDAPADMIN_HTTPS: "false"
     ports:
-      - "8080:80"
+      - "127.0.0.1:8080:80"
     depends_on: [openldap]
     networks: [auth-network]
 
@@ -50,8 +59,6 @@ services:
       KC_HTTP_PORT: 8080
       KC_HOSTNAME: http://localhost:8081
       KC_HOSTNAME_STRICT: "false"
-    ports:
-      - "8081:8080"
     volumes:
       - ./keycloak/import:/opt/keycloak/data/import:ro
     depends_on: [postgres, openldap]
@@ -61,7 +68,7 @@ services:
     build: ./fastapi
     container_name: ldap-oauth-api
     ports:
-      - "8000:8000"
+      - "127.0.0.1:8000:8000"
     environment:
       KEYCLOAK_INTERNAL: http://keycloak:8080
       KEYCLOAK_PUBLIC: http://localhost:8081
@@ -77,3 +84,6 @@ volumes:
 
 networks:
   auth-network:
+  dashboard:
+    external: true
+    name: dashboard-lab
