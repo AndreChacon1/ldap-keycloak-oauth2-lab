@@ -1,0 +1,10 @@
+Command: openssl s_client -connect auth-gateway:636 -servername localhost -verify_hostname localhost -CAfile /container/service/slapd/assets/certs/ca.crt -verify_return_error < /dev/null
+Only verification lines retained; TLS session material omitted.
+depth=1 CN = Dashboard local lab CA
+verify return:1
+depth=0 CN = openldap
+verify return:1
+Verification: OK
+Verified peername: localhost
+New, TLSv1.2, Cipher is ECDHE-RSA-AES256-GCM-SHA384
+    Verify return code: 0 (ok)

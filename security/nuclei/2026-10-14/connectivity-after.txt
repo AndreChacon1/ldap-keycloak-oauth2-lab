@@ -1,0 +1,7 @@
+PASS HTTP http://frontend/
+PASS HTTP http://backend/health
+PASS HTTP http://auth-gateway/realms/cybersecurity/.well-known/openid-configuration
+PASS HTTP http://phpldapadmin/
+PASS HTTP http://api:8000/health
+PASS TCP openldap:389
+PASS TCP auth-gateway:636

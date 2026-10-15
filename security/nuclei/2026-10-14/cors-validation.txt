@@ -1,0 +1,20 @@
+Unauthenticated realm response keys: realm, public_key, token-service, account-service, tokens-not-before
+Connecting to auth-gateway (172.23.0.2:80)
+  HTTP/1.1 200 OK
+  Server: nginx/1.22.1
+  Date: Thu, 15 Oct 2026 02:39:21 GMT
+  Content-Type: application/json;charset=UTF-8
+  Content-Length: 611
+  Connection: close
+  Access-Control-Allow-Origin: https://audit.invalid
+  Access-Control-Allow-Credentials: true
+  Cache-Control: no-cache
+  Referrer-Policy: no-referrer
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  X-Robots-Tag: none
+
+saving to '/dev/null'
+null                 100% |********************************|   611  0:00:00 ETA
+'/dev/null' saved

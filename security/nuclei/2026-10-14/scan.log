@@ -1,0 +1,61 @@
+
+                     __     _
+   ____  __  _______/ /__  (_)
+  / __ \/ / / / ___/ / _ \/ /
+ / / / / /_/ / /__/ /  __/ /
+/_/ /_/\__,_/\___/_/\___/_/   v3.11.1
+
+		projectdiscovery.io
+
+[INF] Current nuclei version: v3.11.1 (unknown) - remove '-duc' flag to enable update checks
+[INF] Current nuclei-templates version: v10.5.0 (unknown) - remove '-duc' flag to enable update checks
+[INF] New templates added in latest release: 295
+[INF] Templates loaded for current scan: 62
+[INF] Executing 62 signed templates from projectdiscovery/nuclei-templates
+[INF] Targets loaded for current scan: 4
+[INF] Templates clustered: 13 (Reduced 44 Requests)
+[0:00:30] | Templates: 62 | Hosts: 4 | RPS: 3 | Matched: 0 | Errors: 0 | Requests: 116/1032 (11%)
+[0:01:00] | Templates: 62 | Hosts: 4 | RPS: 3 | Matched: 0 | Errors: 0 | Requests: 212/1032 (20%)
+[0:01:30] | Templates: 62 | Hosts: 4 | RPS: 4 | Matched: 0 | Errors: 0 | Requests: 386/1032 (37%)
+[swagger-api] [http] [info] http://api:8000/docs [paths="/docs"]
+[0:02:00] | Templates: 62 | Hosts: 4 | RPS: 3 | Matched: 1 | Errors: 0 | Requests: 478/1032 (46%)
+[0:02:30] | Templates: 62 | Hosts: 4 | RPS: 3 | Matched: 1 | Errors: 0 | Requests: 572/1032 (55%)
+[0:03:00] | Templates: 62 | Hosts: 4 | RPS: 3 | Matched: 1 | Errors: 0 | Requests: 639/1032 (61%)
+[0:03:30] | Templates: 62 | Hosts: 4 | RPS: 3 | Matched: 1 | Errors: 0 | Requests: 764/1032 (74%)
+[cors-misconfig:arbitrary-origin] [http] [info] http://auth-gateway/realms/cybersecurity [cors_origin="https://xjabg.com"]
+[0:04:00] | Templates: 62 | Hosts: 4 | RPS: 3 | Matched: 2 | Errors: 0 | Requests: 849/1032 (82%)
+[nginx-version] [http] [info] http://auth-gateway/realms/cybersecurity ["nginx/1.22.1"]
+[keycloak-openid-config] [http] [info] http://auth-gateway/realms/cybersecurity/.well-known/openid-configuration
+[phpldapadmin-panel] [http] [info] http://phpldapadmin ["1.2.5"]
+[0:04:30] | Templates: 62 | Hosts: 4 | RPS: 3 | Matched: 5 | Errors: 0 | Requests: 937/1032 (90%)
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://api:8000
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://api:8000
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://api:8000
+[http-missing-security-headers:strict-transport-security] [http] [info] http://api:8000
+[http-missing-security-headers:x-frame-options] [http] [info] http://api:8000
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://api:8000
+[http-missing-security-headers:content-security-policy] [http] [info] http://api:8000
+[http-missing-security-headers:permissions-policy] [http] [info] http://api:8000
+[http-missing-security-headers:x-content-type-options] [http] [info] http://api:8000
+[http-missing-security-headers:referrer-policy] [http] [info] http://api:8000
+[nginx-eol:version] [http] [info] http://auth-gateway ["1.22.1"]
+[http-missing-security-headers:content-security-policy] [http] [info] http://auth-gateway/realms/cybersecurity
+[http-missing-security-headers:permissions-policy] [http] [info] http://auth-gateway/realms/cybersecurity
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://auth-gateway/realms/cybersecurity
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://auth-gateway/realms/cybersecurity
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://auth-gateway/realms/cybersecurity
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://auth-gateway/realms/cybersecurity
+[nginx-eol:version] [http] [info] http://auth-gateway/realms/cybersecurity ["1.22.1"]
+[http-missing-security-headers:referrer-policy] [http] [info] http://phpldapadmin
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://phpldapadmin
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://phpldapadmin
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://phpldapadmin
+[http-missing-security-headers:strict-transport-security] [http] [info] http://phpldapadmin
+[http-missing-security-headers:content-security-policy] [http] [info] http://phpldapadmin
+[http-missing-security-headers:permissions-policy] [http] [info] http://phpldapadmin
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://phpldapadmin
+[0:05:00] | Templates: 62 | Hosts: 4 | RPS: 3 | Matched: 31 | Errors: 0 | Requests: 1031/1032 (99%)
+[0:05:09] | Templates: 62 | Hosts: 4 | RPS: 3 | Matched: 31 | Errors: 0 | Requests: 1057/1032 (102%)
+[INF] Scan completed in 5m. 31 matches found.
+[INF] HTTP connections: 897 total, 76 new, 821 reused (91.5%)
+[0:05:09] | Templates: 62 | Hosts: 4 | RPS: 3 | Matched: 31 | Errors: 0 | Requests: 1057/1032 (102%)

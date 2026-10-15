@@ -1,0 +1,19 @@
+TEST tls1
+write:errno=0
+TEST tls1_1
+write:errno=0
+TEST tls1_2
+depth=1 CN = Dashboard local lab CA
+verify error:num=19:self signed certificate in certificate chain
+CONNECTION ESTABLISHED
+Protocol version: TLSv1.2
+Ciphersuite: ECDHE-RSA-AES256-GCM-SHA384
+Peer certificate: CN = openldap
+Hash used: SHA256
+Signature type: RSA-PSS
+Verification error: self signed certificate in certificate chain
+Supported Elliptic Curve Point Formats: uncompressed
+Server Temp Key: X25519, 253 bits
+DONE
+TEST tls1_3
+write:errno=0

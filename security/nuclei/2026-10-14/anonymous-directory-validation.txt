@@ -1,0 +1,14 @@
+# extended LDIF
+#
+# LDAPv3
+# base <dc=example,dc=com> with scope baseObject
+# filter: (objectclass=*)
+# requesting: dn
+#
+
+# search result
+search: 2
+result: 32 No such object
+
+# numResponses: 1
+anonymous

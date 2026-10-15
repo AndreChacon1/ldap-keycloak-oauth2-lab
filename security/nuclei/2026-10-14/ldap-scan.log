@@ -1,0 +1,18 @@
+
+                     __     _
+   ____  __  _______/ /__  (_)
+  / __ \/ / / / ___/ / _ \/ /
+ / / / / /_/ / /__/ /  __/ /
+/_/ /_/\__,_/\___/_/\___/_/   v3.11.1
+
+		projectdiscovery.io
+
+[INF] Current nuclei version: v3.11.1 (unknown) - remove '-duc' flag to enable update checks
+[INF] Current nuclei-templates version: v10.5.0 (unknown) - remove '-duc' flag to enable update checks
+[INF] New templates added in latest release: 295
+[INF] Templates loaded for current scan: 2
+[INF] Executing 2 signed templates from projectdiscovery/nuclei-templates
+[INF] Targets loaded for current scan: 1
+[ldap-metadata] [javascript] [info] openldap:389 ["DomainFunctionality:","ForestFunctionality:","DomainControllerFunctionality:","BaseDN: dc=389","DnsHostName:","DefaultNamingContext:"]
+[ldap-anonymous-login-detect] [javascript] [medium] openldap:389
+[INF] Scan completed in 159.630075ms. 2 matches found.

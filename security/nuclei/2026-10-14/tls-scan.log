@@ -1,0 +1,21 @@
+
+                     __     _
+   ____  __  _______/ /__  (_)
+  / __ \/ / / / ___/ / _ \/ /
+ / / / / /_/ / /__/ /  __/ /
+/_/ /_/\__,_/\___/_/\___/_/   v3.11.1
+
+		projectdiscovery.io
+
+[INF] Current nuclei version: v3.11.1 (unknown) - remove '-duc' flag to enable update checks
+[INF] Current nuclei-templates version: v10.5.0 (unknown) - remove '-duc' flag to enable update checks
+[INF] New templates added in latest release: 295
+[INF] Templates loaded for current scan: 38
+[INF] Executing 38 signed templates from projectdiscovery/nuclei-templates
+[INF] Targets loaded for current scan: 1
+[INF] Templates clustered: 33 (Reduced 33 Requests)
+[tls-version] [ssl] [info] auth-gateway:636 ["tls12"]
+[mismatched-ssl-certificate] [ssl] [info] auth-gateway:636 ["CN: openldap"]
+[ssl-dns-names] [ssl] [info] auth-gateway:636 ["openldap","localhost"]
+[untrusted-root-certificate] [ssl] [low] auth-gateway:636
+[INF] Scan completed in 185.374159ms. 4 matches found.

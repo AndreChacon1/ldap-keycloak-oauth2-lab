@@ -1,0 +1,5 @@
+[[34mINF[0m] Nuclei Engine Version: v3.11.1
+[[34mINF[0m] Nuclei Config Directory: /root/.config/nuclei
+[[34mINF[0m] Nuclei Cache Directory: /root/.cache/nuclei
+[[34mINF[0m] PDCP Directory: /root/.pdcp
+[[34mINF[0m] Public nuclei-templates version: v10.5.0 (/root/nuclei-templates)

@@ -1,0 +1,4 @@
+http://auth-gateway
+http://auth-gateway/realms/cybersecurity
+http://phpldapadmin
+http://api:8000

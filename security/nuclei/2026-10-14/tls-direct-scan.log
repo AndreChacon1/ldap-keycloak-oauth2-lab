@@ -1,0 +1,3 @@
+[tls-version] [ssl] [info] openldap:636 ["tls12"]
+[ssl-dns-names] [ssl] [info] openldap:636 ["localhost","openldap"]
+[untrusted-root-certificate] [ssl] [low] openldap:636

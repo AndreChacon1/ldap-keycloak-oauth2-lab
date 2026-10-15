@@ -1,0 +1,13 @@
+{"template":"deprecated-tls","type":"ssl","input":"auth-gateway:636","address":"auth-gateway:636","error":"cause=\"could not connect to host\"","kind":"unknown-error"}
+{"template":"deprecated-tls","type":"ssl","input":"auth-gateway:636","address":"auth-gateway:636","error":"cause=\"could not connect to host\"","kind":"unknown-error"}
+{"template":"deprecated-tls","type":"ssl","input":"auth-gateway:636","address":"auth-gateway:636","error":"cause=\"could not connect to host\"","kind":"unknown-error"}
+{"template":"fortimanager-certificate","type":"ssl","input":"auth-gateway:636","address":"auth-gateway:636","error":"cause=\"could not connect to host\"","kind":"unknown-error"}
+{"template":"insecure-cipher-suite-detect","type":"ssl","input":"auth-gateway:636","address":"auth-gateway:636","error":"cause=\"could not connect to host\"","kind":"unknown-error"}
+{"template":"insecure-cipher-suite-detect","type":"ssl","input":"auth-gateway:636","address":"auth-gateway:636","error":"cause=\"could not connect to host\"","kind":"unknown-error"}
+{"template":"insecure-cipher-suite-detect","type":"ssl","input":"auth-gateway:636","address":"auth-gateway:636","error":"cause=\"could not connect to host\"","kind":"unknown-error"}
+{"template":"tls-version","type":"ssl","input":"auth-gateway:636","address":"auth-gateway:636","error":"cause=\"could not connect to host\"","kind":"unknown-error"}
+{"template":"tls-version","type":"ssl","input":"auth-gateway:636","address":"auth-gateway:636","error":"cause=\"could not connect to host\"","kind":"unknown-error"}
+{"template":"tls-version","type":"ssl","input":"auth-gateway:636","address":"auth-gateway:636","error":"cause=\"could not connect to host\"","kind":"unknown-error"}
+{"template":"weak-cipher-suites","type":"ssl","input":"auth-gateway:636","address":"auth-gateway:636","error":"cause=\"could not connect to host\"","kind":"unknown-error"}
+{"template":"weak-cipher-suites","type":"ssl","input":"auth-gateway:636","address":"auth-gateway:636","error":"cause=\"could not connect to host\"","kind":"unknown-error"}
+{"template":"weak-cipher-suites","type":"ssl","input":"auth-gateway:636","address":"auth-gateway:636","error":"cause=\"could not connect to host\"","kind":"unknown-error"}

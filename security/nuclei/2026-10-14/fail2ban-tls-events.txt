@@ -1,0 +1,2 @@
+2026-10-15 02:40:14,692 fail2ban.actions        [14]: NOTICE  [ldaps-connections] Ban 172.23.0.5
+2026-10-15 02:41:13,357 fail2ban.actions        [14]: NOTICE  [ldaps-connections] Unban 172.23.0.5
